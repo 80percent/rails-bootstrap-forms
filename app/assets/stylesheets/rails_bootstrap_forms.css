@@ -1,10 +1,18 @@
-.rails-bootstrap-forms-date-select select,
-.rails-bootstrap-forms-time-select select,
-.rails-bootstrap-forms-datetime-select select {
+.rails-bootstrap-forms-form .rails-bootstrap-forms-date-select select,
+.rails-bootstrap-forms-form .rails-bootstrap-forms-time-select select,
+.rails-bootstrap-forms-form .rails-bootstrap-forms-datetime-select select {
   display: inline-block;
   width: auto;
 }
 
-.rails-bootstrap-forms-error-summary {
+.rails-bootstrap-forms-form .rails-bootstrap-forms-error-summary {
   margin-top: 10px;
+}
+
+.rails-bootstrap-forms-form .form-group .help-block,
+.rails-bootstrap-forms-form .form-group.has-error .help-block {
+  color: #c7c5c5;
+}
+.rails-bootstrap-forms-form .form-group.has-error .help-block.validation-failed-help-block {
+  color: #d9534f;
 }

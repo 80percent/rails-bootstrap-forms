@@ -9,6 +9,7 @@ module BootstrapForm
 
       options[:html] ||= {}
       options[:html][:role] ||= 'form'
+      options[:html][:class] = ['rails-bootstrap-forms-form', options[:html][:class]].compact.join(" ")
 
       layout = case options[:layout]
         when :inline
